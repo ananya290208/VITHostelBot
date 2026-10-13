@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Hostel AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Sidebar: Hostel Info & Tickets Tracker -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">🏢</div>
+        <div>
+          <h2>Campus Hostel</h2>
+          <span class="subtext">Resident Portal & AI Desk</span>
+        </div>
+      </div>
+
+      <nav class="quick-nav">
+        <h3>Quick Topics</h3>
+        <button class="nav-btn" onclick="sendQuickPrompt('What are the hostel curfew and gate timings?')">
+          <span>🚪</span> Curfew & In/Out Timings
+        </button>
+        <button class="nav-btn" onclick="sendQuickPrompt('What is today\'s mess menu and meal timings?')">
+          <span>🍽️</span> Mess Menu & Timings
+        </button>
+        <button class="nav-btn" onclick="sendQuickPrompt('What are the hot water geyser timings?')">
+          <span>🚿</span> Hot Water Schedule
+        </button>
+        <button class="nav-btn" onclick="sendQuickPrompt('Where are iron boxes available and what are the rules?')">
+          <span>👔</span> Iron Box Availability
+        </button>
+        <button class="nav-btn" onclick="sendQuickPrompt('My room A-302 AC is not cooling, please raise a complaint')">
+          <span>❄️</span> Report AC Issue
+        </button>
+        <button class="nav-btn" onclick="sendQuickPrompt('Wi-Fi is not working on 3rd floor Block B')">
+          <span>📶</span> Report Wi-Fi Issue
+        </button>
+      </nav>
+
+      <div class="recent-tickets-section">
+        <div class="section-header">
+          <h3>Recent Complaints</h3>
+          <button class="refresh-btn" onclick="loadRecentTickets()" title="Refresh tickets">🔄</button>
+        </div>
+        <div id="ticketsList" class="tickets-list">
+          <div class="loading-placeholder">Loading tickets...</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Chat Window -->
+    <main class="chat-container">
+      <header class="chat-header">
+        <div class="header-status">
+          <span class="status-indicator online"></span>
+          <div>
+            <h1>Hostel Support AI</h1>
+            <p>Rules • Mess Food • Facilities • AC / Wi-Fi / Cooler Complaints</p>
+          </div>
+        </div>
+        <button class="clear-chat-btn" onclick="clearChat()">Clear Chat</button>
+      </header>
+
+      <!-- Message History Container -->
+      <div class="messages-area" id="messagesArea">
+        <!-- Welcome Message -->
+        <div class="message bot-message">
+          <div class="avatar">🤖</div>
+          <div class="message-content">
+            <p><strong>Hello! I am your 24/7 Hostel Assistant.</strong></p>
+            <p>How can I assist you today? You can ask me about:</p>
+            <ul>
+              <li><strong>Hostel Rules:</strong> Curfew timings, gate passes, visitor guidelines</li>
+              <li><strong>Mess Dining:</strong> Breakfast, lunch, snacks, dinner schedules & menus</li>
+              <li><strong>Facilities:</strong> Hot water availability, iron box locations</li>
+              <li><strong>Maintenance:</strong> Raise complaints for AC, Wi-Fi, Water Coolers, or Plumbing!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Action Chips -->
+      <div class="quick-chips-wrapper">
+        <div class="chips-scroller">
+          <button class="chip" onclick="sendQuickPrompt('What is today\'s mess menu?')">🍽️ Today's Food</button>
+          <button class="chip" onclick="sendQuickPrompt('What is the gate curfew time?')">🚪 Gate Curfew</button>
+          <button class="chip" onclick="sendQuickPrompt('When is hot water available?')">🚿 Hot Water</button>
+          <button class="chip" onclick="sendQuickPrompt('Where can I iron my clothes?')">👔 Iron Box</button>
+          <button class="chip" onclick="sendQuickPrompt('Water cooler on 2nd floor is not cooling')">💧 Water Cooler Issue</button>
+          <button class="chip" onclick="sendQuickPrompt('Check status of ticket TKT-2026-001')">📋 Check TKT-2026-001</button>
+        </div>
+      </div>
+
+      <!-- Input Bar -->
+      <form class="chat-input-area" id="chatForm" onsubmit="handleFormSubmit(event)">
+        <input 
+          type="text" 
+          id="userInput" 
+          placeholder="Ask a question or report an issue (e.g., 'AC leaking in room 204')..." 
+          autocomplete="off" 
+          required
+        />
+        <button type="submit" id="sendBtn">
+          <span>Send</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </form>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{
+  "mess_timings": {
+    "breakfast": "07:30 AM - 09:30 AM",
+    "lunch": "12:30 PM - 02:30 PM",
+    "snacks": "05:00 PM - 06:00 PM",
+    "dinner": "07:45 PM - 09:45 PM"
+  },
+  "weekly_menu": {
+    "monday": {
+      "breakfast": "Idli, Vada, Sambar, Coconut Chutney, Bread-Butter-Jam, Tea & Coffee",
+      "lunch": "Jeera Rice, Chapati, Dal Tadka, Paneer Butter Masala, Mixed Salad, Curd",
+      "snacks": "Samosa, Mint Chutney, Tea & Coffee",
+      "dinner": "Phulka Roti, Dal Makhani, Aloo Gobi, Steamed Rice, Gulab Jamun"
+    },
+    "tuesday": {
+      "breakfast": "Poha with Sev & Lemon, Boiled Eggs / Banana, Toast, Tea & Coffee",
+      "lunch": "Steamed Rice, Roti, Rajma Masala, Bhindi Fry, Boondi Raita, Papad",
+      "snacks": "Veg Cutlet, Tomato Sauce, Tea & Coffee",
+      "dinner": "Chapati, Veg Pulao, Kadhi Pakora, Dum Aloo, Kheer"
+    },
+    "wednesday": {
+      "breakfast": "Masala Dosa, Sambar, Tomato Chutney, Boiled Sprouts, Tea & Coffee",
+      "lunch": "Peas Pulao, Chapati, Chole Bhature / Chole Masala, Curd, Onion Salad",
+      "snacks": "Bhel Puri / Sev Puri, Tea & Coffee",
+      "dinner": "Rotis, Egg Curry / Shahi Paneer, Dal Fry, Jeera Rice, Fruit Custard"
+    },
+    "thursday": {
+      "breakfast": "Aloo Paratha with Curd & Pickle, Fresh Fruits, Tea & Coffee",
+      "lunch": "Steamed Rice, Roti, Dal Palak, Baingan Bharta, Cucumber Raita, Pickle",
+      "snacks": "Bread Pakora, Green Chutney, Tea & Coffee",
+      "dinner": "Methi Thepla / Roti, Mix Veg Curry, Dal Tadka, Rice, Rasgulla"
+    },
+    "friday": {
+      "breakfast": "Uttapam, Sambar, Coconut Chutney, Cornflakes with Milk, Tea & Coffee",
+      "lunch": "Veg Biryani, Mirchi Ka Salan, Raita, Dal Fry, Chapati, Salad",
+      "snacks": "Pani Puri / Masala Corn, Tea & Coffee",
+      "dinner": "Roti, Chicken Curry / Paneer Do Pyaza, Dal Kolhapuri, Steamed Rice, Ice Cream"
+    },
+    "saturday": {
+      "breakfast": "Puri Bhaji, Halwa, Boiled Egg / Fresh Fruit, Tea & Coffee",
+      "lunch": "Lemon Rice / Curd Rice, Roti, Dal Tadka, Aloo Shimla Mirch, Papad",
+      "snacks": "Veg Sandwich, Potato Chips, Tea & Coffee",
+      "dinner": "Chinese Special: Veg Fried Rice, Veg Manchurian, Hakka Noodles, Hot Garlic Sauce"
+    },
+    "sunday": {
+      "breakfast": "Chole Kulche / Veg Upma, Chutney, Fresh Juice, Tea & Coffee",
+      "lunch": "Special Sunday Feast: Paneer Tikka Masala / Butter Chicken, Jeera Rice, Naan/Roti, Dal Makhani, Gulab Jamun",
+      "snacks": "Biscuit & Cookie Assortment, Tea & Coffee",
+      "dinner": "Light Dinner: Khichdi, Kadhi, Papad, Aloo Jeera, Pickle, Seasonal Fruit"
+    }
+  },
+  "mess_rules": [
+    "Carrying mess utensils to hostel rooms is strictly prohibited.",
+    "Mess rebate can be claimed if absent for more than 4 consecutive days with approved night leave.",
+    "Special diet (sick diet: khichdi/boiled vegetables) available upon prior intimation to the mess supervisor."
+  ]
+}

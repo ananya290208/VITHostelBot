@@ -1,0 +1,33 @@
+{
+  "hot_water_facility": {
+    "geyser_type": "Centralized Solar Water Heating with Electric Backup",
+    "timings": {
+      "morning": "06:00 AM - 09:30 AM",
+      "evening": "06:30 PM - 09:00 PM"
+    },
+    "seasonal_notes": "During winter months (Nov - Feb), evening geyser operational hours are extended till 09:30 PM.",
+    "hot_water_points": "Available in all attached and common washrooms on every floor."
+  },
+  "iron_box_facility": {
+    "availability": "Available in Common Utility / Ironing Rooms",
+    "locations": [
+      "Block A: 2nd Floor (Room 215) and 4th Floor (Room 415)",
+      "Block B: 1st Floor (Room 112) and 3rd Floor (Room 312)"
+    ],
+    "operating_hours": "07:00 AM - 10:00 PM daily",
+    "guidelines": [
+      "Heavy duty iron boards and steam irons are provided free of charge.",
+      "Always switch off and unplug the iron after use.",
+      "Personal high-wattage clothes irons inside student bedrooms are prohibited for fire safety reasons."
+    ]
+  },
+  "water_coolers_and_ro": {
+    "locations": "Every floor near the central staircase has an RO drinking water dispenser.",
+    "features": "Dispenses both Chilled and Normal RO-purified water 24/7.",
+    "maintenance_notice": "Filters are serviced on the 1st and 15th of every month."
+  },
+  "laundry_facility": {
+    "washing_machines": "Available in basement laundry room from 06:00 AM to 11:00 PM.",
+    "slot_booking": "First-come, first-served or via laundry ledger at security desk."
+  }
+}

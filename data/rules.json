@@ -1,0 +1,41 @@
+{
+  "hostel_info": {
+    "name": "Campus Grand Hostel",
+    "blocks": ["Block A (Boys)", "Block B (Girls)"]
+  },
+  "curfew_and_timings": {
+    "main_gate_closing": "10:00 PM",
+    "main_gate_opening": "06:00 AM",
+    "curfew_rules": [
+      "All students must report to their respective hostel blocks before 10:00 PM.",
+      "Biometric / Turnstile punch is mandatory at entry and exit.",
+      "Late entry between 10:00 PM and 10:30 PM is recorded in the Late Register and requires warden explanation.",
+      "Entry after 10:30 PM requires prior written permission from the Chief Warden and intimation to parents."
+    ],
+    "library_pass_extension": {
+      "allowed_time": "Till 11:30 PM",
+      "requirement": "Valid digital library exit slip endorsed by the Central Library security."
+    }
+  },
+  "check_in_and_check_out": {
+    "daily_outing": {
+      "timings": "06:00 AM to 09:30 PM",
+      "procedure": "Biometric punch-out at the security gate."
+    },
+    "night_out_pass": {
+      "application_deadline": "Before 06:00 PM on the day of travel",
+      "approval_flow": "Student submits via portal -> Automated SMS/Email sent to registered parent -> Warden approves upon parent confirmation.",
+      "check_in_on_return": "Must report to warden's office before 10:00 AM next morning or by arrival time stated in out-pass."
+    },
+    "vacation_checkout": {
+      "procedure": "Clear all mess and hostel dues, get room inventory signed off by Caretaker, hand over room key to reception."
+    }
+  },
+  "general_conduct_rules": [
+    "Strict zero-tolerance policy against ragging under UGC guidelines.",
+    "Quiet hours are observed from 11:00 PM to 06:00 AM in all corridors and study halls.",
+    "Guests/visitors are only permitted in the Visitors Lounge between 09:00 AM and 07:00 PM. No unauthorized visitors allowed inside student rooms.",
+    "Possession or consumption of alcohol, tobacco, narcotics, or contraband substances is strictly prohibited and subject to immediate expulsion.",
+    "High-power heating appliances (immersion rods, induction plates, room heaters) are prohibited in rooms."
+  ]
+}
