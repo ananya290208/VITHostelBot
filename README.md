@@ -45,7 +45,7 @@ HostelChatBot/
 Double-click [`run_hostel_bot.bat`](./run_hostel_bot.bat). It installs requirements if needed and opens `http://localhost:8000`.
 
 ### Method 2: Manual Terminal Run
-Open PowerShell or Command Prompt in `F:\Ananya\Andriod Club\HostelChatBot`:
+Open PowerShell or Command Prompt in `<Location Where Code is copied>\HostelChatBot`:
 ```bash
 cd backend
 pip install -r requirements.txt
